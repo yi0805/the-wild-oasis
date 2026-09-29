@@ -148,6 +148,15 @@ Do not add Python/FastAPI, AWS, AI, microservices, Kubernetes, Kafka, Redis, Gra
 
 **Status:** Complete after the evidence-based Task 054 merged-state closeout audit.
 
+### Recruiter demo operations — follow-on sequence
+
+**Objective:** keep the deployed portfolio application useful without retaining tutorial identities or manually moving booking dates before recruiter review.
+
+- [x] Task 032 — added a privacy-safe canonical recruiter dataset and a locked-down, repeatable UTC-relative database reset. The hosted migration, numeric repair, corrected dry run, permanent reset, generated-type refresh, and hosted/application-data verification are complete.
+- [ ] Task 033 — schedule the reviewed reset shortly after UTC midnight with Supabase Cron and verify reviewer access. Do not begin until Task 032 Stage B is complete.
+
+**Status:** Task 032 is complete with a hosted `8 cabins / 24 synthetic guests / 24 bookings` canonical dataset. Task 033 remains unstarted and no Cron schedule exists.
+
 ## Optional stretch goals
 
 - [ ] Add a small Playwright smoke suite only if a stable, isolated Supabase test environment and repeatable seed process can be created without disproportionate complexity. It is not required for project completion.
