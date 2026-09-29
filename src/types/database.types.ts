@@ -19,6 +19,7 @@ export type Database = {
           cabinId: number | null
           cabinPrice: number | null
           created_at: string
+          demo_dataset: string | null
           endDate: string | null
           extrasPrice: number | null
           guestId: number | null
@@ -36,6 +37,7 @@ export type Database = {
           cabinId?: number | null
           cabinPrice?: number | null
           created_at?: string
+          demo_dataset?: string | null
           endDate?: string | null
           extrasPrice?: number | null
           guestId?: number | null
@@ -53,6 +55,7 @@ export type Database = {
           cabinId?: number | null
           cabinPrice?: number | null
           created_at?: string
+          demo_dataset?: string | null
           endDate?: string | null
           extrasPrice?: number | null
           guestId?: number | null
@@ -110,6 +113,7 @@ export type Database = {
       cabins: {
         Row: {
           created_at: string
+          demo_dataset: string | null
           description: string | null
           discount: number | null
           id: number
@@ -120,6 +124,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          demo_dataset?: string | null
           description?: string | null
           discount?: number | null
           id?: number
@@ -130,6 +135,7 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          demo_dataset?: string | null
           description?: string | null
           discount?: number | null
           id?: number
@@ -144,6 +150,7 @@ export type Database = {
         Row: {
           countryFlag: string | null
           created_at: string
+          demo_dataset: string | null
           email: string | null
           fullName: string | null
           id: number
@@ -153,6 +160,7 @@ export type Database = {
         Insert: {
           countryFlag?: string | null
           created_at?: string
+          demo_dataset?: string | null
           email?: string | null
           fullName?: string | null
           id?: number
@@ -162,6 +170,7 @@ export type Database = {
         Update: {
           countryFlag?: string | null
           created_at?: string
+          demo_dataset?: string | null
           email?: string | null
           fullName?: string | null
           id?: number
