@@ -14,9 +14,9 @@ Public sign-up is disabled. A dedicated reviewer account is available, with cred
 
 ### Reviewer demo
 
-The hosted application uses a dedicated recruiter-safe demo dataset. A guarded PostgreSQL reset function runs through Supabase Cron each day at 00:05 UTC, restoring the canonical cabin, guest, booking, and settings state so reviewers can explore without permanently changing the demo.
+The hosted application uses a dedicated recruiter-safe demo dataset. A guarded PostgreSQL reset function runs through Supabase Cron each day at 00:05 UTC, restoring the canonical cabin, guest, booking, and settings data after reviewer use.
 
-Public sign-up remains disabled. Reviewer credentials are shared privately on request and are never committed to Git.
+Public sign-up remains disabled. Reviewer credentials are shared privately on request and are not stored in the repository.
 
 ## Screenshots
 
