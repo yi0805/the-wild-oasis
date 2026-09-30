@@ -10,7 +10,13 @@ The Wild Oasis is a hotel operations dashboard for managing cabins, bookings, ch
 
 [Open the Vercel deployment](https://17-the-wild-oasis-blond.vercel.app)
 
-Public sign-up is disabled. Authenticated operations access requires an account provisioned outside the browser application; no demo credentials are provided.
+Public sign-up is disabled. A dedicated reviewer account is available, with credentials shared privately on request and never stored in this repository. The hosted demo dataset resets automatically each day.
+
+### Reviewer demo
+
+The hosted application uses a dedicated recruiter-safe demo dataset. A guarded PostgreSQL reset function runs through Supabase Cron each day at 00:05 UTC, restoring the canonical cabin, guest, booking, and settings data after reviewer use.
+
+Public sign-up remains disabled. Reviewer credentials are shared privately on request and are not stored in the repository.
 
 ## Screenshots
 
@@ -31,6 +37,7 @@ Public sign-up is disabled. Authenticated operations access requires an account 
 - TypeScript/TSX is used throughout the active production application graph, with generated Supabase database contracts at the data boundary.
 - Feature hooks coordinate [TanStack Query](https://tanstack.com/query/latest) queries and targeted mutation invalidation; React Hook Form handles operational forms.
 - Supabase Auth, PostgreSQL RLS/grants, and Storage policies form the authorization boundary for a simple trusted-operator model.
+- A guarded PostgreSQL reset function and Supabase Cron job restore the canonical recruiter-demo dataset daily; browser roles cannot invoke the reset directly.
 - Storage-backed cabin and avatar mutations use explicit ordering and best-effort compensation for failed follow-up writes.
 - Vitest and React Testing Library cover behavioural workflows and service-level mutation failures; GitHub Actions runs lint, typecheck, tests, and the production build.
 - Important query boundaries render explicit loading, failure, and appropriate empty states; key modal/menu workflows have keyboard and focus handling, with targeted responsive layouts for forms, Dashboard, and booking/check-in workflows.
